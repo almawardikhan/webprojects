@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Bangladesh - Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/min.css">
+
+    <style>
+      
+    </style>
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+
+        <div class="header-main">
+            <div class="hdr-inner">
+
+                <!-- Mobile menu button -->
+                <button class="mob-menu-btn" id="mobMenuBtn" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <!-- Logo -->
+                <a href="index.html">
+                    <div class="mobile">
+                        <div>
+                            <img src="assets/img/banner/logo.webp" alt="" class="img-fluid" style="width:120px;">
+                        </div>
+                    </div>
+                </a>
+                <!-- Search -->
+                <div class="header-search">
+                    <div class="search-wrap">
+                        <input type="text" placeholder="Search for gifts, flowers, cakes..." />
+                        <button type="button" aria-label="Search"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <!-- Icons -->
+                <div class="header-icons">
+                    <button class="hdr-icon-btn" id="loginBtn" aria-label="Login">
+                        <i class="far fa-user-circle" style="font-size: 22px;"></i>
+                        <span class="lbl">Account</span>
+                    </button>
+                    <button class="hdr-icon-btn" id="cartBtn" aria-label="Cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-badge">2</span>
+                        <span class="lbl">৳6,500</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Category Nav -->
+        <nav class="header-nav">
+            <div class="nav-inner">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">Surprise Gifts <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Luxury Gifts</a></li>
+                            <li><a href="#">Midnight Delivery Gifts</a></li>
+                            <li><a href="#">Premium Gifts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Special Gifts <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Gifts for Her</a></li>
+                            <li><a href="#">Gifts for Him</a></li>
+                            <li><a href="#">Saree</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Occasion Gifts <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Valentine's Day Gifts</a></li>
+                            <li><a href="#">Wedding Gifts</a></li>
+                            <li><a href="#">Eid Gifts</a></li>
+                            <li><a href="#">Anniversary Gifts</a></li>
+                            <li><a href="#">Chocolate Box</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- ===== CART SIDEBAR ===== -->
+    <!-- ===== CART SIDEBAR ===== -->
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="sb-hdr">
+            <span class="sb-title">Shopping Cart</span>
+            <button class="sb-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-body">
+            <!-- Items wrapper -->
+            <div class="cart-items-wrapper">
+                <div class="cart-item">
+                    <div class="cart-item-img" style="background:#FFF0F6;">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17" cy="13" r="5" fill="#ED93B1" />
+                            <ellipse cx="11" cy="10" rx="3" ry="4.5" fill="#D4537E" transform="rotate(-30 11 10)" />
+                            <ellipse cx="23" cy="10" rx="3" ry="4.5" fill="#D4537E" transform="rotate(30 23 10)" />
+                            <ellipse cx="17" cy="8" rx="2.5" ry="4" fill="#ED93B1" />
+                            <line x1="17" y1="13" x2="17" y2="27" stroke="#993556" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <ellipse cx="11" cy="19" rx="5" ry="3.5" fill="#F4C0D1" transform="rotate(-15 11 19)" />
+                            <ellipse cx="23" cy="19" rx="5" ry="3.5" fill="#F4C0D1" transform="rotate(15 23 19)" />
+                            <ellipse cx="17" cy="22" rx="4" ry="3" fill="#ED93B1" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="ci-name">Luxury Rose Bouquet</div>
+                        <div class="ci-qty">Qty: 1</div>
+                        <div class="ci-price">৳3,500</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-item-img" style="background:#FFF4E6;">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="16" width="22" height="14" rx="3" fill="#EF9F27" />
+                            <rect x="4" y="13" width="26" height="5" rx="2.5" fill="#BA7517" />
+                            <rect x="14" y="7" width="6" height="8" rx="3" fill="#EF9F27" />
+                            <circle cx="17" cy="7" r="3" fill="#FA8C00" />
+                            <rect x="15.5" y="13" width="3" height="17" rx="1.5" fill="#633806" />
+                            <circle cx="11" cy="22" r="2" fill="#FAC775" />
+                            <circle cx="17" cy="24" r="2" fill="#FAC775" />
+                            <circle cx="23" cy="22" r="2" fill="#FAC775" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="ci-name">Premium Chocolate Box</div>
+                        <div class="ci-qty">Qty: 1</div>
+                        <div class="ci-price">৳3,000</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer: total + buttons সবসময় নিচে -->
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong>৳6,500</strong>
+                </div>
+                <!-- <button class="btn-sb btn-sb-outline">View Full Cart</button> -->
+                <a href="check-out.html" class="text-decoration-none"><button class="btn-sb btn-sb-primary">Proceed to
+                        Checkout</button></a>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- ===== LOGIN SIDEBAR ===== -->
+    <aside class="login-sidebar" id="loginSidebar">
+        <div class="sb-hdr">
+            <span class="sb-title">My Account</span>
+            <button class="sb-close" id="loginClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="login-body">
+
+            <!-- Welcome block নতুন -->
+            <div class="welcome-block">
+                <div class="avatar-ring">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Welcome Back!</h3>
+                <p class="login-sub">Sign in to manage orders, save your wishlist & get exclusive offers.</p>
+            </div>
+
+            <div class="fg">
+                <label for="loginEmail">Username or Email</label>
+                <div class="input-wrap">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="text" id="loginEmail" placeholder="Enter your email or username" />
+                </div>
+            </div>
+
+            <div class="fg">
+                <label for="loginPass">Password</label>
+                <div class="input-wrap">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" id="loginPass" placeholder="Enter your password" />
+                </div>
+            </div>
+
+            <label class="remember-row">
+                <input type="checkbox" /> Remember Me
+            </label>
+
+            <button class="btn-login">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+
+            <div class="lost-pw">
+                <a href="#"><i class="fas fa-lock" style="font-size:10px;margin-right:4px;"></i> Lost Your Password?</a>
+            </div>
+
+            <div class="divider"><span>New to Gift Bangladesh?</span></div>
+
+            <button class="btn-create">
+                <i class="fas fa-user-plus" style="margin-right:6px;"></i> Create an Account
+            </button>
+
+            <!-- Social login নতুন -->
+            <div class="social-login">
+                <span>Or sign in with</span>
+                <div class="social-btns">
+                    <button class="s-btn"><i class="fab fa-google"></i></button>
+                    <button class="s-btn"><i class="fab fa-facebook-f"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <!-- ===== MOBILE NAV SIDEBAR ===== -->
+    <aside class="mob-nav-sidebar" id="mobNavSidebar">
+        <div class="sb-hdr">
+            <span class="sb-title">Menu</span>
+            <button class="sb-close" id="mobNavClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="mob-nav-body">
+            <div class="mob-item">
+                <div class="mob-link" data-target="mob-surprise">
+                    <span>🎁 Surprise Gifts</span><i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="mob-sub" id="mob-surprise">
+                    <li><a href="#">Luxury Gifts</a></li>
+                    <li><a href="#">Midnight Delivery Gifts</a></li>
+                    <li><a href="#">Premium Gifts</a></li>
+                </ul>
+            </div>
+            <div class="mob-item">
+                <div class="mob-link" data-target="mob-special">
+                    <span>💝 Special Gifts</span><i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="mob-sub" id="mob-special">
+                    <li><a href="#">Gifts for Her</a></li>
+                    <li><a href="#">Gifts for Him</a></li>
+                    <li><a href="#">Saree</a></li>
+                </ul>
+            </div>
+            <div class="mob-item">
+                <div class="mob-link" data-target="mob-occasion">
+                    <span>🎊 Occasion Gifts</span><i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="mob-sub" id="mob-occasion">
+                    <li><a href="#">Valentine's Day Gifts</a></li>
+                    <li><a href="#">Wedding Gifts</a></li>
+                    <li><a href="#">Eid Gifts</a></li>
+                    <li><a href="#">Anniversary Gifts</a></li>
+                    <li><a href="#">Chocolate Box</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+
+    <div style="background:#f5f5f5; min-height:100vh; font-family:'Segoe UI',sans-serif; padding:24px 0 48px;">
+        <div class="container py-4">
+
+            <!-- Step breadcrumb -->
+            <div
+                style="display:flex; align-items:center; gap:8px; font-size: 20px; margin-bottom:18px; flex-wrap:wrap;">
+                <a href="#" style="color:#888; text-decoration:none;">Shopping cart</a>
+                <span style="color:#888;">→</span>
+                <span style="color:#552c8f; font-weight:700;">Checkout</span>
+                <span style="color:#888;">→</span>
+                <a href="#" style="color:#888; text-decoration:none;">Order complete</a>
+            </div>
+
+            <!-- Coupon bar -->
+            <div style="margin-bottom:22px; font-size:22px; color:#444;">
+                Have a coupon?
+                <a href="#"
+                    style="color:#552c8f; font-weight:600; text-decoration:none; border-bottom:1px dashed #a855f7;"
+                    onclick="document.getElementById('couponRow').style.display='flex'; return false;">
+                    Click here to enter your code
+                </a>
+                <div id="couponRow" style="display:none; margin-top:10px; gap:8px; align-items:center;">
+                    <input type="text" placeholder="Coupon code"
+                        style="border:1.5px solid #ddd; border-radius:7px; padding:8px 12px; font-size:13px; width:200px; outline:none;">
+                    <button
+                        style="background:#552c8f; color:#fff; border:none; border-radius:7px; padding:8px 16px; font-size:13px; font-weight:600; cursor:pointer;">Apply</button>
+                </div>
+            </div>
+
+            <div class="row g-4 align-items-start">
+
+                <!-- LEFT: Billing & Shipping + Additional Info -->
+                <div class="col-12 col-lg-6">
+
+                    <!-- Billing & Shipping Card -->
+                    <div
+                        style="background:#fff; border-radius:12px; padding:24px 22px 20px; margin-bottom:20px; box-shadow:0 1px 6px rgba(0,0,0,0.07);">
+                        <h5 style="font-size:1.05rem; font-weight:700; color:#1a1a1a; margin-bottom:20px;">Billing &amp;
+                            Shipping</h5>
+
+                        <!-- Name -->
+                        <div style="margin-bottom:14px;">
+                            <label
+                                style="font-size:12.5px; font-weight:600; color:#444; display:block; margin-bottom:5px;">
+                                Name <span style="color:#e01563;">*</span>
+                            </label>
+                            <input type="text" placeholder="Name"
+                                style="width:100%; border:1.5px solid #ddd; border-radius:7px; padding:9px 13px; font-size:13.5px; color:#333; background:#fff; transition:border-color 0.2s;">
+                        </div>
+
+                        <!-- Mobile -->
+                        <div style="margin-bottom:14px;">
+                            <label
+                                style="font-size:12.5px; font-weight:600; color:#444; display:block; margin-bottom:5px;">
+                                Mobile No. <span style="color:#e01563;">*</span>
+                            </label>
+                            <input type="tel" placeholder="11 Digit Mobile: 09XXXXXXXX"
+                                style="width:100%; border:1.5px solid #ddd; border-radius:7px; padding:9px 13px; font-size:13.5px; color:#333; background:#fff;">
+                        </div>
+
+                        <!-- Full Address -->
+                        <div style="margin-bottom:4px;">
+                            <label
+                                style="font-size:12.5px; font-weight:600; color:#444; display:block; margin-bottom:5px;">
+                                Full Address <span style="color:#e01563;">*</span>
+                            </label>
+                            <input type="text" placeholder="House, Block, Area, Upazilla, Thana"
+                                style="width:100%; border:1.5px solid #ddd; border-radius:7px; padding:9px 13px; font-size:13.5px; color:#333; background:#fff;">
+                        </div>
+                    </div>
+
+                    <!-- Additional Information Card -->
+                    <div
+                        style="background:#fff; border-radius:12px; padding:24px 22px 319px; box-shadow:0 1px 6px rgba(0,0,0,0.07);">
+                        <h5 style="font-size:1.05rem; font-weight:700; color:#1a1a1a; margin-bottom:6px;">Additional
+                            Information</h5>
+                        <p style="font-size:12px; color:#aaa; margin-bottom:12px;">Order notes (optional)</p>
+                        <textarea rows="5" placeholder="Notes about your order, e.g. special notes for delivery."
+                            style="width:100%; border:1.5px solid #ddd; border-radius:7px; padding:10px 13px; font-size:13px; color:#555; resize:vertical; background:#fff;"></textarea>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: Your Order + Payment -->
+                <div class="col-12 col-lg-6">
+                    <div
+                        style="background:#fff; border-radius:12px; padding:24px 22px 22px; box-shadow:0 1px 6px rgba(0,0,0,0.07);">
+
+                        <h5 style="font-size:1.05rem; font-weight:700; color:#1a1a1a; margin-bottom:16px;">Your Order
+                        </h5>
+
+                        <!-- Order table header -->
+                        <div
+                            style="display:flex; justify-content:space-between; font-size:12px; font-weight:700; color:#888; border-bottom:1.5px solid #f0f0f0; padding-bottom:8px; margin-bottom:10px;">
+                            <span>Product</span>
+                            <span>Subtotal</span>
+                        </div>
+
+                        <!-- Order items -->
+                        <div style="font-size:13.5px; color:#333;">
+
+                            <div
+                                style="display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px solid #f5f5f5;">
+                                <span>Love box <span style="color:#888; font-weight:600;">× 3</span></span>
+                                <span style="font-weight:600;">9,150৳</span>
+                            </div>
+                            <div
+                                style="display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px solid #f5f5f5;">
+                                <span>Saree package-04 <span style="color:#888; font-weight:600;">× 1</span></span>
+                                <span style="font-weight:600;">2,150৳</span>
+                            </div>
+                            <div
+                                style="display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px solid #f5f5f5;">
+                                <span>Chocolate Bouquet <span style="color:#888; font-weight:600;">× 3</span></span>
+                                <span style="font-weight:600;">9,750৳</span>
+                            </div>
+                            <div
+                                style="display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px solid #f0f0f0;">
+                                <span>Saree package - 05 <span style="color:#888; font-weight:600;">× 1</span></span>
+                                <span style="font-weight:600;">2,150৳</span>
+                            </div>
+
+                            <!-- Subtotal -->
+                            <div
+                                style="display:flex; justify-content:space-between; padding:10px 0 8px; border-bottom:1px solid #f0f0f0; font-weight:600;">
+                                <span style="color:#555;">Subtotal</span>
+                                <span>23,200৳</span>
+                            </div>
+
+                            <!-- Shipment -->
+                            <div style="padding:10px 0 8px; border-bottom:1px solid #f0f0f0;">
+                                <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                                    <span style="font-weight:600; color:#555;">Shipment 1</span>
+                                    <div style="text-align:right;">
+                                        <div
+                                            style="display:flex; align-items:center; gap:6px; justify-content:flex-end; margin-bottom:5px;">
+                                            <label
+                                                style="display:flex; align-items:center; gap:5px; font-size:13px; cursor:pointer;">
+                                                <input type="radio" name="ship1" value="80" checked
+                                                    onclick="calcTotal()">
+                                                Inside Dhaka: <strong>80৳</strong>
+                                            </label>
+                                            <span style="color:#25d366; font-size:13px;">●</span>
+                                        </div>
+                                        <div
+                                            style="display:flex; align-items:center; gap:6px; justify-content:flex-end;">
+                                            <label
+                                                style="display:flex; align-items:center; gap:5px; font-size:13px; cursor:pointer;">
+                                                <input type="radio" name="ship1" value="120" onclick="calcTotal()">
+                                                Outside Dhaka: <strong>120৳</strong>
+                                            </label>
+                                            <span style="color:#ccc; font-size:13px;">○</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Total -->
+                            <div
+                                style="display:flex; justify-content:space-between; align-items:center; padding:12px 0 16px;">
+                                <span style="font-size:15px; font-weight:700; color:#1a1a1a;">Total</span>
+                                <span id="totalDisplay"
+                                    style="font-size:1.4rem; font-weight:800; color:#d4537e;">23,280৳</span>
+                            </div>
+                        </div>
+
+                        <!-- Payment Methods -->
+
+                        <!-- Cash on Delivery -->
+                        <div
+                            style="border:1.5px solid #e5e7eb; border-radius:9px; margin-bottom:10px; overflow:hidden;">
+                            <label
+                                style="display:flex; align-items:center; gap:10px; padding:11px 14px; cursor:pointer; background:#fafafa;">
+                                <input type="radio" name="payment" value="cod" checked onclick="showPayment('cod')"
+                                    style="accent-color:#552c8f;">
+                                <span style="font-size:13.5px; font-weight:600; color:#333;">Cash on delivery</span>
+                            </label>
+                        </div>
+
+                        <!-- bKash -->
+                        <div
+                            style="border:1.5px solid #e5e7eb; border-radius:9px; margin-bottom:10px; overflow:hidden;">
+                            <label
+                                style="display:flex; align-items:center; gap:10px; padding:11px 14px; cursor:pointer; background:#fafafa;">
+                                <input type="radio" name="payment" value="bkash" onclick="showPayment('bkash')"
+                                    style="accent-color:#552c8f;">
+                                <span style="font-size:13.5px; font-weight:600; color:#e01563;">bKash Advance
+                                    Payment</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Bkash_logo.svg/120px-Bkash_logo.svg.png"
+                                    alt="bKash" style="height:20px; margin-left:auto;">
+                            </label>
+
+                            <!-- bKash Panel -->
+                            <div id="panel-bkash" class="payment-panel"
+                                style="background:#fff8fb; border-top:1px solid #fde0ea; padding:14px 16px;">
+                                <div
+                                    style="background:#fff0f6; border:1px solid #fde0ea; border-radius:8px; padding:10px 13px; margin-bottom:12px; font-size:13px; color:#c2185b; font-weight:600;">
+                                    You need to send us ৳ 23280
+                                </div>
+                                <p style="font-size:13px; color:#555; margin-bottom:4px;">
+                                    <strong>Account Type:</strong> Personal (Send Money)<br>
+                                    <strong>Account Number:</strong> <span
+                                        style="color:#e01563; font-weight:700;">01609710085</span>
+                                </p>
+                                <div style="margin-top:12px; margin-bottom:10px;">
+                                    <label
+                                        style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:5px;">Your
+                                        bKash Account Number</label>
+                                    <input type="tel" placeholder="09XXXXXXXX"
+                                        style="width:100%; border:1.5px solid #ddd; border-radius:7px; padding:9px 12px; font-size:13px; background:#fff;">
+                                </div>
+                                <div>
+                                    <label
+                                        style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:5px;">Your
+                                        bKash Transaction ID</label>
+                                    <input type="text" placeholder="2MAS"
+                                        style="width:100%; border:1.5px solid #ddd; border-radius:7px; padding:9px 12px; font-size:13px; background:#fff;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Nagad -->
+                        <div
+                            style="border:1.5px solid #e5e7eb; border-radius:9px; margin-bottom:18px; overflow:hidden;">
+                            <label
+                                style="display:flex; align-items:center; gap:10px; padding:11px 14px; cursor:pointer; background:#fafafa;">
+                                <input type="radio" name="payment" value="nagad" onclick="showPayment('nagad')"
+                                    style="accent-color:#552c8f;">
+                                <span style="font-size:13.5px; font-weight:600; color:#e5550a;">Nagad Advance
+                                    Payment</span>
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Nagad-Logo.svg/120px-Nagad-Logo.svg.png"
+                                    alt="Nagad" style="height:20px; margin-left:auto;">
+                            </label>
+
+                            <!-- Nagad Panel -->
+                            <div id="panel-nagad" class="payment-panel"
+                                style="background:#fff8f5; border-top:1px solid #fde0d5; padding:14px 16px;">
+                                <div
+                                    style="background:#fff3ee; border:1px solid #fde0d5; border-radius:8px; padding:10px 13px; margin-bottom:12px; font-size:13px; color:#e5550a; font-weight:600;">
+                                    You need to send us ৳ 23280
+                                </div>
+                                <p style="font-size:13px; color:#555; margin-bottom:4px;">
+                                    <strong>Account Type:</strong> Personal (Send Money)<br>
+                                    <strong>Account Number:</strong> <span
+                                        style="color:#e5550a; font-weight:700;">01609710085</span>
+                                </p>
+                                <div style="margin-top:12px; margin-bottom:10px;">
+                                    <label
+                                        style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:5px;">Your
+                                        Nagad Account Number</label>
+                                    <input type="tel" placeholder="09XXXXXXXX"
+                                        style="width:100%; border:1.5px solid #ddd; border-radius:7px; padding:9px 12px; font-size:13px; background:#fff;">
+                                </div>
+                                <div>
+                                    <label
+                                        style="font-size:12px; font-weight:600; color:#666; display:block; margin-bottom:5px;">Your
+                                        Nagad Transaction ID</label>
+                                    <input type="text" placeholder="Transaction ID"
+                                        style="width:100%; border:1.5px solid #ddd; border-radius:7px; padding:9px 12px; font-size:13px; background:#fff;">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Delivery notice (Bangla) -->
+                        <div
+                            style="background:#f9f9f9; border:1px solid #eee; border-radius:9px; padding:13px 15px; margin-bottom:18px; font-size:12.5px; color:#555; line-height:1.85;">
+                            <div style="font-weight:700; color:#333; margin-bottom:6px;">ডেলিভারি সংক্রান্ত তথ্য জানতে:
+                            </div>
+                            <div>✦ পণ্যের অর্ডারটি কনফার্ম হওয়ার ২৪ ঘণ্টা থেকে ৭২ ঘণ্টার মধ্যে পাঠানো হবে।</div>
+                            <div>✦ ঢাকার মধ্যে ডেলিভারি চার্জ ৮০ টাকা।</div>
+                            <div>✦ ঢাকার বাইরে ডেলিভারি চার্জ ১৬০ টাকা।</div>
+                            <div>✦ ঢাকার বাইরে সিটি কর্পোরেশন এলাকায় ডেলিভারি চার্জ ১৪০ টাকা।</div>
+                            <div>✦ ঢাকার মধ্যে ডেলিভারি চার্জ ৮৫০ টাকা।</div>
+                            <div>✦ ঢাকার মধ্যে ডেলিভারি চার্জ পরিবর্তনশীল।</div>
+                        </div>
+
+                        <!-- Place Order Button -->
+                        <button
+                            style="width:100%; padding:14px; background:#552c8f; border:none; border-radius:9px; color:#fff; font-size:15px; font-weight:700; letter-spacing:0.04em; cursor:pointer; transition:background 0.2s;"
+                            onmouseover="this.style.background='#3e1f6e'" onmouseout="this.style.background='#552c8f'">
+                            Place Order
+                        </button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== FOOTER HTML ===== -->
+    <footer class="footer-wrapper">
+        <div class="footer-inner">
+
+            <!-- Col 1: Logo + Social -->
+            <div class="footer-col-logo">
+                <img src="assets/img/banner/logo.webp" alt="Elite Collection Logo" class="footer-logo-img">
+                <p class="footer-follow-label">Follow Us</p>
+                <div class="footer-social">
+                    <a href="#" class="s-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="s-yt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="s-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Top Categories -->
+            <div>
+                <h6 class="footer-col-heading">Top Categories</h6>
+                <ul class="footer-links">
+                    <li><a href="#">BOISHAKH</a></li>
+                    <li><a href="#">Skin &amp; Hair</a></li>
+                    <li><a href="#">Wedding</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Quick Navigation -->
+            <div>
+                <h6 class="footer-col-heading">Quick Navigation</h6>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">Customer Reviews</a></li>
+                    <li><a href="#">Submit a Complaint</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Legal & Policy -->
+            <div>
+                <h6 class="footer-col-heading">Legal &amp; Policy</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Delivery Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Warranty Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact Information -->
+            <div>
+                <h6 class="footer-col-heading">Contact Information</h6>
+
+                <div class="contact-card">
+                    <div class="contact-icon-box phone-box">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Number:</strong>
+                        <span>01700000000</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon-box email-box">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Email:</strong>
+                        <span>exampul@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon-box address-box">
+                        <i class="fas fa-location-dot"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Address:</strong>
+                        <span>Dhaka</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2026 <a href="#">Chowdhury IT Solutions</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- WhatsApp Fixed Button -->
+    <div style=" position: fixed; bottom: 75px; left: 20px; display: flex; align-items: center; gap: 0; z-index: 9999;">
+        <!-- Green WhatsApp Circle -->
+        <a href="https://wa.me/8801609710085" target="_blank"
+            style="width: 46px; height: 46px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </a>
+
+        <!-- Contact us Pill -->
+        <a href="https://wa.me/8801609710085" target="_blank"
+            style="background: #fff; border: 1px solid #e0e0e0; border-radius: 50px; padding: 10px 18px; font-size: 14px; font-weight: 500; color: #222; text-decoration: none; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,0.10); margin-left: 8px;">Contact
+            us</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- hader sidbar er js -->
+    <script>
+        const overlay = document.getElementById('overlay');
+
+        function closeAll() {
+            ['cartSidebar', 'loginSidebar', 'mobNavSidebar'].forEach(id =>
+                document.getElementById(id).classList.remove('open')
+            );
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function openSidebar(id) {
+            closeAll();
+            document.getElementById(id).classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        document.getElementById('cartBtn').addEventListener('click', () => openSidebar('cartSidebar'));
+        document.getElementById('cartClose').addEventListener('click', closeAll);
+        document.getElementById('loginBtn').addEventListener('click', () => openSidebar('loginSidebar'));
+        document.getElementById('loginClose').addEventListener('click', closeAll);
+        document.getElementById('mobMenuBtn').addEventListener('click', () => openSidebar('mobNavSidebar'));
+        document.getElementById('mobNavClose').addEventListener('click', closeAll);
+        overlay.addEventListener('click', closeAll);
+
+        document.querySelectorAll('.mob-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const target = document.getElementById(link.dataset.target);
+                const isOpen = target.classList.contains('show');
+                document.querySelectorAll('.mob-sub').forEach(d => d.classList.remove('show'));
+                document.querySelectorAll('.mob-link').forEach(l => l.classList.remove('open'));
+                if (!isOpen) { target.classList.add('show'); link.classList.add('open'); }
+            });
+        });
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAll(); });
+    </script>
+
+    <!--  -->
+    <script>
+        function showPayment(type) {
+            document.querySelectorAll('.payment-panel').forEach(p => p.classList.remove('active'));
+            const panel = document.getElementById('panel-' + type);
+            if (panel) panel.classList.add('active');
+        }
+
+        function calcTotal() {
+            const selected = document.querySelector('input[name="ship1"]:checked');
+            const ship = selected ? parseInt(selected.value) : 80;
+            const subtotal = 23200;
+            const total = subtotal + ship;
+            document.getElementById('totalDisplay').textContent = total.toLocaleString('en-IN') + '৳';
+            document.querySelectorAll('.bkash-amount').forEach(el => el.textContent = '৳ ' + total);
+        }
+    </script>
+</body>
+
+</html>

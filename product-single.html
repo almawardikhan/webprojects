@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gift Bangladesh - Header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+    <!-- Head এ এই CSS গুলো add করো -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./assets/css/min.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+
+        <div class="header-main">
+            <div class="hdr-inner">
+
+                <!-- Mobile menu button -->
+                <button class="mob-menu-btn" id="mobMenuBtn" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <!-- Logo -->
+                <a href="index.html">
+                    <div class="mobile">
+                        <div>
+                            <img src="assets/img/banner/logo.webp" alt="" class="img-fluid" style="width:120px;">
+                        </div>
+                    </div>
+                </a>
+                <!-- Search -->
+                <div class="header-search">
+                    <div class="search-wrap">
+                        <input type="text" placeholder="Search for gifts, flowers, cakes..." />
+                        <button type="button" aria-label="Search"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <!-- Icons -->
+                <div class="header-icons">
+                    <button class="hdr-icon-btn" id="loginBtn" aria-label="Login">
+                        <i class="far fa-user-circle" style="font-size: 22px;"></i>
+                        <span class="lbl">Account</span>
+                    </button>
+                    <button class="hdr-icon-btn" id="cartBtn" aria-label="Cart">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-badge">2</span>
+                        <span class="lbl">৳6,500</span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Category Nav -->
+        <nav class="header-nav">
+            <div class="nav-inner">
+                <ul class="nav-menu">
+                    <li>
+                        <a href="#">Surprise Gifts <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Luxury Gifts</a></li>
+                            <li><a href="#">Midnight Delivery Gifts</a></li>
+                            <li><a href="#">Premium Gifts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Special Gifts <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Gifts for Her</a></li>
+                            <li><a href="#">Gifts for Him</a></li>
+                            <li><a href="#">Saree</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Occasion Gifts <i class="fas fa-chevron-down"></i></a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#">Valentine's Day Gifts</a></li>
+                            <li><a href="#">Wedding Gifts</a></li>
+                            <li><a href="#">Eid Gifts</a></li>
+                            <li><a href="#">Anniversary Gifts</a></li>
+                            <li><a href="#">Chocolate Box</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <!-- ===== CART SIDEBAR ===== -->
+    <!-- ===== CART SIDEBAR ===== -->
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="sb-hdr">
+            <span class="sb-title">Shopping Cart</span>
+            <button class="sb-close" id="cartClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-body">
+            <!-- Items wrapper -->
+            <div class="cart-items-wrapper">
+                <div class="cart-item">
+                    <div class="cart-item-img" style="background:#FFF0F6;">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="17" cy="13" r="5" fill="#ED93B1" />
+                            <ellipse cx="11" cy="10" rx="3" ry="4.5" fill="#D4537E" transform="rotate(-30 11 10)" />
+                            <ellipse cx="23" cy="10" rx="3" ry="4.5" fill="#D4537E" transform="rotate(30 23 10)" />
+                            <ellipse cx="17" cy="8" rx="2.5" ry="4" fill="#ED93B1" />
+                            <line x1="17" y1="13" x2="17" y2="27" stroke="#993556" stroke-width="1.5"
+                                stroke-linecap="round" />
+                            <ellipse cx="11" cy="19" rx="5" ry="3.5" fill="#F4C0D1" transform="rotate(-15 11 19)" />
+                            <ellipse cx="23" cy="19" rx="5" ry="3.5" fill="#F4C0D1" transform="rotate(15 23 19)" />
+                            <ellipse cx="17" cy="22" rx="4" ry="3" fill="#ED93B1" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="ci-name">Luxury Rose Bouquet</div>
+                        <div class="ci-qty">Qty: 1</div>
+                        <div class="ci-price">৳3,500</div>
+                    </div>
+                </div>
+                <div class="cart-item">
+                    <div class="cart-item-img" style="background:#FFF4E6;">
+                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="6" y="16" width="22" height="14" rx="3" fill="#EF9F27" />
+                            <rect x="4" y="13" width="26" height="5" rx="2.5" fill="#BA7517" />
+                            <rect x="14" y="7" width="6" height="8" rx="3" fill="#EF9F27" />
+                            <circle cx="17" cy="7" r="3" fill="#FA8C00" />
+                            <rect x="15.5" y="13" width="3" height="17" rx="1.5" fill="#633806" />
+                            <circle cx="11" cy="22" r="2" fill="#FAC775" />
+                            <circle cx="17" cy="24" r="2" fill="#FAC775" />
+                            <circle cx="23" cy="22" r="2" fill="#FAC775" />
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="ci-name">Premium Chocolate Box</div>
+                        <div class="ci-qty">Qty: 1</div>
+                        <div class="ci-price">৳3,000</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer: total + buttons সবসময় নিচে -->
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <strong>৳6,500</strong>
+                </div>
+                <!-- <button class="btn-sb btn-sb-outline">View Full Cart</button> -->
+                <button class="btn-sb btn-sb-primary">Proceed to Checkout</button>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- ===== LOGIN SIDEBAR ===== -->
+    <aside class="login-sidebar" id="loginSidebar">
+        <div class="sb-hdr">
+            <span class="sb-title">My Account</span>
+            <button class="sb-close" id="loginClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="login-body">
+
+            <!-- Welcome block নতুন -->
+            <div class="welcome-block">
+                <div class="avatar-ring">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>Welcome Back!</h3>
+                <p class="login-sub">Sign in to manage orders, save your wishlist & get exclusive offers.</p>
+            </div>
+
+            <div class="fg">
+                <label for="loginEmail">Username or Email</label>
+                <div class="input-wrap">
+                    <i class="fas fa-envelope input-icon"></i>
+                    <input type="text" id="loginEmail" placeholder="Enter your email or username" />
+                </div>
+            </div>
+
+            <div class="fg">
+                <label for="loginPass">Password</label>
+                <div class="input-wrap">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" id="loginPass" placeholder="Enter your password" />
+                </div>
+            </div>
+
+            <label class="remember-row">
+                <input type="checkbox" /> Remember Me
+            </label>
+
+            <button class="btn-login">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+
+            <div class="lost-pw">
+                <a href="#"><i class="fas fa-lock" style="font-size:10px;margin-right:4px;"></i> Lost Your Password?</a>
+            </div>
+
+            <div class="divider"><span>New to Gift Bangladesh?</span></div>
+
+            <button class="btn-create">
+                <i class="fas fa-user-plus" style="margin-right:6px;"></i> Create an Account
+            </button>
+
+            <!-- Social login নতুন -->
+            <div class="social-login">
+                <span>Or sign in with</span>
+                <div class="social-btns">
+                    <button class="s-btn"><i class="fab fa-google"></i></button>
+                    <button class="s-btn"><i class="fab fa-facebook-f"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <!-- ===== MOBILE NAV SIDEBAR ===== -->
+    <aside class="mob-nav-sidebar" id="mobNavSidebar">
+        <div class="sb-hdr">
+            <span class="sb-title">Menu</span>
+            <button class="sb-close" id="mobNavClose"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="mob-nav-body">
+            <div class="mob-item">
+                <div class="mob-link" data-target="mob-surprise">
+                    <span>🎁 Surprise Gifts</span><i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="mob-sub" id="mob-surprise">
+                    <li><a href="#">Luxury Gifts</a></li>
+                    <li><a href="#">Midnight Delivery Gifts</a></li>
+                    <li><a href="#">Premium Gifts</a></li>
+                </ul>
+            </div>
+            <div class="mob-item">
+                <div class="mob-link" data-target="mob-special">
+                    <span>💝 Special Gifts</span><i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="mob-sub" id="mob-special">
+                    <li><a href="#">Gifts for Her</a></li>
+                    <li><a href="#">Gifts for Him</a></li>
+                    <li><a href="#">Saree</a></li>
+                </ul>
+            </div>
+            <div class="mob-item">
+                <div class="mob-link" data-target="mob-occasion">
+                    <span>🎊 Occasion Gifts</span><i class="fas fa-chevron-down"></i>
+                </div>
+                <ul class="mob-sub" id="mob-occasion">
+                    <li><a href="#">Valentine's Day Gifts</a></li>
+                    <li><a href="#">Wedding Gifts</a></li>
+                    <li><a href="#">Eid Gifts</a></li>
+                    <li><a href="#">Anniversary Gifts</a></li>
+                    <li><a href="#">Chocolate Box</a></li>
+                </ul>
+            </div>
+        </div>
+    </aside>
+
+
+
+
+
+
+
+
+    <div class="product-details">
+        <!-- Product Detail Page -->
+        <div style="background:#fff; min-height:100vh; font-family: 'Segoe UI', sans-serif;" class="pt-4">
+
+            <!-- Main Product Section -->
+            <div class="container-lg" style="padding-top:24px; padding-bottom:40px;">
+
+                <!-- Breadcrumb -->
+                <div>
+                    <div class="container-lg py-3">
+                        <nav style="font-size:13px; color:#888;">
+                            <a href="#" style="color:#888; text-decoration:none;">Home</a>
+                            <span style="margin:0 5px;">/</span>
+                            <a href="#" style="color:#888; text-decoration:none;">Special Gifts</a>
+                            <span style="margin:0 5px;">/</span>
+                            <a href="#" style="color:#888; text-decoration:none;">Gifts for Her</a>
+                            <span style="margin:0 5px;">/</span>
+                            <span style="color:#333; font-weight:500;">Saree package-04</span>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row g-4 align-items-start">
+
+                    <!-- Left: Product Image -->
+                    <div class="col-12 col-md-6">
+                        <div style="position:relative; border-radius:12px; overflow:hidden; background:#f8f8f8;">
+                            <!-- Sale Badge -->
+                            <span
+                                style="position:absolute; top:12px; right:12px; background:#a855f7; color:#fff; font-size:12px; font-weight:700; padding:4px 9px; border-radius:6px; z-index:1;">-4%</span>
+                            <img src="./assets/img/product/IMG-20241024-WA0170-600x600.webp" alt="Saree package-04"
+                                style="width:100%; height:auto; display:block; border-radius:12px; object-fit:cover; max-height:480px;">
+                        </div>
+                    </div>
+
+                    <!-- Right: Product Info -->
+                    <div class="col-12 col-md-6">
+
+                        <!-- Title Row + Related Product Card -->
+                        <div
+                            style="display:flex; justify-content:space-between; align-items:flex-start; gap:16px; margin-bottom:14px;">
+                            <h1 style="font-size:1.6rem; font-weight:700; color:#1a1a1a; margin:0; line-height:1.3;">
+                                Saree package-04</h1>
+
+
+                        </div>
+
+                        <!-- Price -->
+                        <div style="display:flex; align-items:center; gap:10px; margin-bottom:20px;">
+                            <span
+                                style="font-size:1.15rem; color:#aaa; text-decoration:line-through; font-weight:500;">2,250৳</span>
+                            <span style="font-size:1.75rem; font-weight:800; color:#d4537e;">2,150৳</span>
+                        </div>
+
+                        <!-- Quantity + Add to Cart + Buy Now -->
+                        <div style="display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-bottom:18px;">
+
+                            <!-- Qty -->
+                            <div
+                                style="display:flex; align-items:center; border:1.5px solid #ddd; border-radius:8px; overflow:hidden; height:44px;">
+                                <button onclick="this.nextElementSibling.stepDown()"
+                                    style="background:none; border:none; width:36px; height:44px; font-size:16px; color:#555; cursor:pointer; font-weight:600;">−</button>
+                                <input type="number" id="qty" value="1" min="1"
+                                    style="width:36px; height:44px; border:none; text-align:center; font-size:14px; font-weight:600; color:#333; outline:none; -moz-appearance:textfield;">
+                                <button onclick="this.previousElementSibling.stepUp()"
+                                    style="background:none; border:none; width:36px; height:44px; font-size:16px; color:#555; cursor:pointer; font-weight:600;">+</button>
+                            </div>
+
+                            <!-- Add to Cart -->
+                            <button
+                                style="flex:1; min-width:130px; height:44px; background:#d4537e; border:none; border-radius:8px; color:#fff; font-size:14px; font-weight:700; cursor:pointer; letter-spacing:0.04em; transition:background 0.2s;"
+                                onmouseover="this.style.background='#b8355e'"
+                                onmouseout="this.style.background='#d4537e'">
+                                Add To Cart
+                            </button>
+
+                            <!-- Buy Now -->
+                            <button
+                                style="flex:1; min-width:110px; height:44px; background:#552c8f; border:none; border-radius:8px; color:#fff; font-size:14px; font-weight:700; cursor:pointer; letter-spacing:0.04em; transition:background 0.2s;"
+                                onmouseover="this.style.background='#3e1f6e'"
+                                onmouseout="this.style.background='#552c8f'">
+                                Buy Now
+                            </button>
+                        </div>
+
+                        <!-- Buy Now helper text -->
+                        <p style="font-size:13px; color:#888; margin-bottom:22px;">
+                            Click <strong style="color:#333;">Buy Now</strong> and place your order easily.
+                        </p>
+
+                        <!-- Divider -->
+                        <hr style="border-color:#f0f0f0; margin-bottom:20px;">
+
+                        <!-- Call for Assistance + WhatsApp -->
+                        <div
+                            style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; background:#fff5f8; border:1px solid #fde0ea; border-radius:10px; padding:14px 18px;">
+                            <span style="font-size:21px; color:#552c8f; font-weight:500;">
+                                Call for Assistance:
+                                <a href="tel:01609710085"
+                                    style="color:#552c8f; font-weight:900; text-decoration:none; border-bottom:3px solid #552c8f; padding-bottom:1px;">01609710085</a>
+                            </span>
+                            <a href="https://wa.me/8801609710085" target="_blank"
+                                style="display:inline-flex; align-items:center; gap:7px; background:#25d366; color:#fff; text-decoration:none; font-size:13px; font-weight:700; padding:9px 16px; border-radius:8px; transition:background 0.2s;"
+                                onmouseover="this.style.background='#1da851'"
+                                onmouseout="this.style.background='#25d366'">
+                                <i class="fab fa-whatsapp" style="font-size:16px;"></i> Whatsapp
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- ===== PRODUCTS SECTION 1===== -->
+    <section class="gb-products-section">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-8">
+                    <h2 class="gb-section-title">Related Products</h2>
+                    <div class="gb-title-underline"></div>
+                </div>
+
+            </div>
+
+
+
+            <div class="product-slider-section">
+                <div class="swiper productSwiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <a href="" class="text-decoration-none">
+                                <div class="product-card-wrapper">
+                                    <span class="sale-badge">-13%</span>
+                                    <div class="img-container">
+                                        <img src="./assets/img/product/a6d59174-dd10-469b-8ed8-5e6cb1381bf8-600x600.webp"
+                                            alt="Love box">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Love box</h3>
+                                        <div class="product-price">
+                                            <span class="price-old">3,500৳</span>
+                                            <span class="price-new">3,050৳</span>
+                                        </div>
+                                        <a href="#"><button class="btn-add-cart">Add To Cart</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none">
+                                <div class="product-card-wrapper">
+                                    <span class="sale-badge">-23%</span>
+                                    <div class="img-container">
+                                        <img src="./assets/img/product/gift1.png" alt="Love box">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Premium Love Box</h3>
+                                        <div class="product-price">
+                                            <span class="price-old">3,500৳</span>
+                                            <span class="price-new">2,700৳</span>
+                                        </div>
+                                        <a href="#"><button class="btn-add-cart">Add To Cart</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none">
+                                <div class="product-card-wrapper">
+                                    <span class="sale-badge">-4%</span>
+                                    <div class="img-container">
+                                        <img src="./assets/img/product/IMG-20241024-WA0170-600x600.webp" alt="Saree">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Saree Package-04</h3>
+                                        <div class="product-price">
+                                            <span class="price-old">2,250৳</span>
+                                            <span class="price-new">2,150৳</span>
+                                        </div>
+                                        <a href="#"><button class="btn-add-cart">Add To Cart</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none">
+                                <div class="product-card-wrapper">
+                                    <span class="sale-badge">-15%</span>
+                                    <div class="img-container">
+                                        <img src="./assets/img/product/IMG-20250617-WA0056-600x600.webp"
+                                            alt="Chocolate">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Chocolate Blast</h3>
+                                        <div class="product-price">
+                                            <span class="price-old">4,800৳</span>
+                                            <span class="price-new">4,100৳</span>
+                                        </div>
+                                        <a href="#"><button class="btn-add-cart">Add To Cart</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none">
+                                <div class="product-card-wrapper">
+                                    <span class="sale-badge">-15%</span>
+                                    <div class="img-container">
+                                        <img src="./assets/img/product/IMG-20250617-WA0056-600x600.webp"
+                                            alt="Chocolate">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Chocolate Blast</h3>
+                                        <div class="product-price">
+                                            <span class="price-old">4,800৳</span>
+                                            <span class="price-new">4,100৳</span>
+                                        </div>
+                                        <a href="#"><button class="btn-add-cart">Add To Cart</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none">
+                                <div class="product-card-wrapper">
+                                    <span class="sale-badge">-15%</span>
+                                    <div class="img-container">
+                                        <img src="./assets/img/product/IMG-20250617-WA0056-600x600.webp"
+                                            alt="Chocolate">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Chocolate Blast</h3>
+                                        <div class="product-price">
+                                            <span class="price-old">4,800৳</span>
+                                            <span class="price-new">4,100৳</span>
+                                        </div>
+                                        <a href="#"><button class="btn-add-cart">Add To Cart</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 7 -->
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none">
+                                <div class="product-card-wrapper">
+                                    <span class="sale-badge">-15%</span>
+                                    <div class="img-container">
+                                        <img src="./assets/img/product/IMG-20250617-WA0056-600x600.webp"
+                                            alt="Chocolate">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Chocolate Blast</h3>
+                                        <div class="product-price">
+                                            <span class="price-old">4,800৳</span>
+                                            <span class="price-new">4,100৳</span>
+                                        </div>
+                                        <a href="#"><button class="btn-add-cart">Add To Cart</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Slide 8 -->
+                        <div class="swiper-slide">
+                            <a href="#" class="text-decoration-none">
+                                <div class="product-card-wrapper">
+                                    <span class="sale-badge">-15%</span>
+                                    <div class="img-container">
+                                        <img src="./assets/img/product/IMG-20250617-WA0056-600x600.webp"
+                                            alt="Chocolate">
+                                    </div>
+                                    <div class="product-content">
+                                        <h3 class="product-name">Chocolate Blast</h3>
+                                        <div class="product-price">
+                                            <span class="price-old">4,800৳</span>
+                                            <span class="price-new">4,100৳</span>
+                                        </div>
+                                        <a href="#"><button class="btn-add-cart">Add To Cart</button></a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Navigation -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- ===== FOOTER HTML ===== -->
+    <footer class="footer-wrapper">
+        <div class="footer-inner">
+
+            <!-- Col 1: Logo + Social -->
+            <div class="footer-col-logo">
+                <img src="assets/img/banner/logo.webp" alt="Elite Collection Logo" class="footer-logo-img">
+                <p class="footer-follow-label">Follow Us</p>
+                <div class="footer-social">
+                    <a href="#" class="s-fb" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="s-yt" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="s-ig" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Col 2: Top Categories -->
+            <div>
+                <h6 class="footer-col-heading">Top Categories</h6>
+                <ul class="footer-links">
+                    <li><a href="#">BOISHAKH</a></li>
+                    <li><a href="#">Skin &amp; Hair</a></li>
+                    <li><a href="#">Wedding</a></li>
+                    <li><a href="#">Jewellery</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Quick Navigation -->
+            <div>
+                <h6 class="footer-col-heading">Quick Navigation</h6>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">How to Buy</a></li>
+                    <li><a href="#">Customer Reviews</a></li>
+                    <li><a href="#">Submit a Complaint</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Legal & Policy -->
+            <div>
+                <h6 class="footer-col-heading">Legal &amp; Policy</h6>
+                <ul class="footer-links">
+                    <li><a href="#">Delivery Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Warranty Policy</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Contact Information -->
+            <div>
+                <h6 class="footer-col-heading">Contact Information</h6>
+
+                <div class="contact-card">
+                    <div class="contact-icon-box phone-box">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Number:</strong>
+                        <span>01700000000</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon-box email-box">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Email:</strong>
+                        <span>exampul@gmail.com</span>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon-box address-box">
+                        <i class="fas fa-location-dot"></i>
+                    </div>
+                    <div class="contact-info-text">
+                        <strong>Address:</strong>
+                        <span>Dhaka</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p>Copyright &copy; 2026 <a href="#">Chowdhury IT Solutions</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- WhatsApp Fixed Button -->
+    <div style=" position: fixed; bottom: 75px; left: 20px; display: flex; align-items: center; gap: 0; z-index: 9999;">
+        <!-- Green WhatsApp Circle -->
+        <a href="https://wa.me/8801609710085" target="_blank"
+            style="width: 46px; height: 46px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; flex-shrink: 0; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </a>
+
+        <!-- Contact us Pill -->
+        <a href="https://wa.me/8801609710085" target="_blank"
+            style="background: #fff; border: 1px solid #e0e0e0; border-radius: 50px; padding: 10px 18px; font-size: 14px; font-weight: 500; color: #222; text-decoration: none; white-space: nowrap; box-shadow: 0 2px 8px rgba(0,0,0,0.10); margin-left: 8px;">Contact
+            us</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script>
+        const productSwiper = new Swiper('.productSwiper', {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 12,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 14,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 16,
+                },
+            }
+        });
+    </script>
+    <script>
+        const overlay = document.getElementById('overlay');
+
+        function closeAll() {
+            ['cartSidebar', 'loginSidebar', 'mobNavSidebar'].forEach(id =>
+                document.getElementById(id).classList.remove('open')
+            );
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        function openSidebar(id) {
+            closeAll();
+            document.getElementById(id).classList.add('open');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        document.getElementById('cartBtn').addEventListener('click', () => openSidebar('cartSidebar'));
+        document.getElementById('cartClose').addEventListener('click', closeAll);
+        document.getElementById('loginBtn').addEventListener('click', () => openSidebar('loginSidebar'));
+        document.getElementById('loginClose').addEventListener('click', closeAll);
+        document.getElementById('mobMenuBtn').addEventListener('click', () => openSidebar('mobNavSidebar'));
+        document.getElementById('mobNavClose').addEventListener('click', closeAll);
+        overlay.addEventListener('click', closeAll);
+
+        document.querySelectorAll('.mob-link').forEach(link => {
+            link.addEventListener('click', () => {
+                const target = document.getElementById(link.dataset.target);
+                const isOpen = target.classList.contains('show');
+                document.querySelectorAll('.mob-sub').forEach(d => d.classList.remove('show'));
+                document.querySelectorAll('.mob-link').forEach(l => l.classList.remove('open'));
+                if (!isOpen) { target.classList.add('show'); link.classList.add('open'); }
+            });
+        });
+
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeAll(); });
+    </script>
+</body>
+
+</html>
